@@ -1,0 +1,76 @@
+/*
+ *Filename : _base.scss
+ *Purpose  : A base file to contain all imports, custom variables and mixins
+ *Author   : Inderpreet Singh Ishwerdas (http://ishwerdas.com)
+ *License  : GPLv3 License
+*/
+	
+/****************
+COMPASS IMPORTS
+****************/
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/transition";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import "compass/css3/hyphenation";
+@import "compass/css3/transform-legacy";
+
+/**************************
+EXTERNAL IMPORTS
+**************************/
+@import url(//fonts.googleapis.com/css?family=Lato:400,400italic,700);
+@import url(//fonts.googleapis.com/css?family=Lora:400,400italic);
+@import url(//fonts.googleapis.com/css?family=Oswald:400,700);
+
+/****************
+CUSTOM VARIABLES
+****************/
+
+/****** Colors ******/
+
+$black       : #000;
+$headingBlack: #333;
+$textBlack   : #333;
+$white       : #fff;
+$snowWhite   : #fafafa;
+$borderGrey  : #ddd;
+$shadowGrey  : #ccc;
+$metaText    : #999;
+$pomegranate : #c0392b;
+$alizarin    : #e74c3c;
+$focalColor  : $alizarin; 
+$hFocalColor : $pomegranate;
+
+/****** Golden Ratio Variable ******/
+$golden:1.618;
+
+/****************
+CUSTOM MIXINS
+****************/
+
+/******* Mixin for defining breakpoints in media queries ******/
+
+@mixin breakpoint($point) {
+	@if $point == tyrion {
+		@media  only screen 
+			and (max-width: 600px)  {@content;}
+	}
+	@else if $point == darvesh {
+		@media only screen
+			and (max-width: 920px) { @content; }
+	}
+	@else if $point == ishwerdas {
+		@media only screen 
+			and (max-width: 1100px)  { @content; }
+	}
+    @else if $point == shahbaaz {
+		@media only screen 
+			and (max-width: 1330px)  { @content; }
+	}
+}
+
+
+
+

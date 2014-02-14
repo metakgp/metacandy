@@ -1,0 +1,20 @@
+// Base file includes custom variables, mixins and imports from compass and external world
+
+@import "partials/base";
+// Typography includes all the general typographic rules 
+@import "partials/typography"; // Contains some variable declarations, so should be imported before everything else. 
+// General file includes the general css rules (tag specific) except the typography part
+@import "partials/modules/icons";
+@import "partials/general";
+// Icon fonts
+@import "partials/fonts";
+// Navigation includes rules for main navigation
+@import "partials/modules/navigation";
+// Rules for the user entered wiki content 
+@import "partials/modules/content";
+// Rules for the sidebar portlets 
+@import "partials/modules/sidebar";
+// Rules for the footer
+@import "partials/modules/footer";
+// Rules that are specific to special pages
+@import "partials/modules/specialPages";

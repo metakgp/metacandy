@@ -1,0 +1,118 @@
+
+ 
+@font-face {
+  font-family: "untitled-font-2";
+  src:url("http://localhost/mediawiki/mediawiki-1.22.0/skins/brlcad/stylesheets/fonts/untitled-font-2.eot");
+  src:url("http://localhost/mediawiki/mediawiki-1.22.0/skins/brlcad/stylesheets/fonts/untitled-font-2.eot?#iefix") format("embedded-opentype"),
+    url("http://localhost/mediawiki/mediawiki-1.22.0/skins/brlcad/stylesheets/fonts/untitled-font-2.ttf") format("truetype"),
+    url("http://localhost/mediawiki/mediawiki-1.22.0/skins/brlcad/stylesheets/fonts/untitled-font-2.svg#untitled-font-2") format("svg"),
+    url("http://localhost/mediawiki/mediawiki-1.22.0/skins/brlcad/stylesheets/fonts/untitled-font-2.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[data-icon]:before {
+  font-family: "untitled-font-2" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-2" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+ 
+.icon-bubble-love-streamline-talk:before {
+   content: "a"; 
+} 
+ 
+.icon-book-read-streamline:before {
+   content: "b"; 
+} 
+ 
+.icon-edit-modify-streamline:before {
+   content: "c"; 
+} 
+ 
+.icon-home-house-streamline:before {
+   content: "d"; 
+} 
+ 
+.icon-ink-pen-streamline:before {
+   content: "e"; 
+} 
+ 
+.icon-monocle-mustache-streamline:before {
+   content: "f"; 
+} 
+ 
+.icon-delete-garbage-streamline:before {
+   content: "g"; 
+} 
+ 
+.icon-factory-lift-streamline-warehouse:before {
+   content: "h"; 
+} 
+ 
+.icon-camera-photo-polaroid-streamline:before {
+   content: "i"; 
+} 
+ 
+.icon-clock-streamline-time:before {
+   content: "j"; 
+} 
+ 
+.icon-magic-magic-wand-streamline:before {
+   content: "k"; 
+} 
+ 
+.icon-settings-streamline-1:before {
+   content: "l"; 
+} 
+ 
+.icon-like-love-streamline:before {
+   content: "m"; 
+} 
+ 
+.icon-bag-shopping-streamline:before {
+   content: "n"; 
+} 
+ 
+.icon-handle-streamline-vector:before {
+   content: "o"; 
+} 
+ 
+.icon-bomb-bug:before {
+   content: "p"; 
+} 
+ 
+.icon-link-streamline:before {
+   content: "q"; 
+} 
+ 
+.icon-notebook-streamline:before {
+   content: "r"; 
+} 
+ 
+.icon-pen-streamline:before {
+   content: "s"; 
+} 
+ 
+.icon-envellope-mail-streamline:before {
+   content: "t"; 
+}

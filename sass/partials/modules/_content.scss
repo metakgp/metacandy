@@ -1,0 +1,159 @@
+/*
+ *Filename : _content.scss
+ *Purpose  : The wiki content styles 
+ *Author   : Inderpreet Singh
+ *License  : GPLv3
+*/
+
+
+.content-wrapper{
+    max-width:1397px;
+    margin:auto;
+	.column-content{
+        margin:100px auto auto 125px;
+        @include breakpoint (darvesh){
+            margin-left:auto;
+        }
+        @include breakpoint (tyrion) {
+            margin-top:0px;
+        }
+    }
+    
+}
+
+.content{
+    float:left;
+    background-color:$white;
+    max-width:$textWidth;
+    width:60%;
+    padding-left:5rem;
+    padding-right:5rem;	
+    border-radius:5px;
+    border: 1px solid $borderGrey;
+    border-top:5px solid $focalColor;
+    box-shadow:2px 2px 3px $shadowGrey;
+    padding-bottom:5rem;
+    @include breakpoint(ishwerdas) {width:80%};
+    @include breakpoint (darvesh) {
+        margin-left:2.5%;
+        width:90%;
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+}
+
+#mw-content-text{
+    min-height:500px;
+}
+
+/*Table Of Contents */
+.tocnumber{float:right;}
+
+.toc{
+    padding:10px;
+    border-left:5px solid $focalColor;
+    width:100%;
+    ul li{
+        a{ border-bottom:none;}
+        list-style-type:none;
+    }   
+}
+
+.mw-editsection{
+    span{display:none;}
+     &:hover a:before{color:$black;}
+    a{
+        font-size:10px;
+        vertical-align:baseline;
+        display:inline-block;
+        border-bottom:none;
+        color:$shadowGrey;
+        font-variant:small-caps;
+        }
+    a:before{
+        @extend .portlet-nav-icon;
+        vertical-align:baseline;
+        content:'e';
+        font-variant:normal;
+        color:$shadowGrey;
+        
+    }
+}
+
+
+#mw-content-text form{
+    margin-bottom:$text;
+        font-family:$sansSerif;
+        legend {
+            font-weight:700;
+            border-bottom:1px solid $focalColor;
+            width:100%;
+        }
+        input,select{
+        vertical-align:middle;
+        }
+        label { 
+        min-width:100px;
+        display:inline-block;
+        color:$black; 
+        vertical-align:middle;
+    }
+        input[type='submit']{display:block; float:right;}
+        border-bottom:1px solid $borderGrey;
+    fieldset{
+        margin-top:10px;
+        table{ margin-top:10px;}
+    }
+    }
+
+.mainLegend{
+    font-size:$kilo;
+    border-bottom:0px !important;
+    background:none;
+    color:$textBlack;
+}
+
+.mw-label{
+    text-align:left !important;
+    min-width:100px;
+}
+
+
+#minutes{
+    font-family:$sansSerif;
+    font-size:$smallText;
+    font-weight:400;
+    text-transform:none;
+    color:$metaText;
+}
+
+#mw-content-text > p:first-child{
+  color:$headingBlack;
+  font-size:$bigText;
+    @include breakpoint(darvesh){
+        font-size:$specialText;
+    }
+    @include breakpoint(tyrion){
+        font-size:$text;
+        font-style:italic;
+    }
+}
+
+.mw-ui-button:hover{
+    color:$textBlack;
+}
+
+.mw-search-results li {
+    padding:10px 10px;
+    border-radius:5px;
+    margin-bottom:10px;
+    a {display:block;}
+}
+
+.mw-search-result-heading a{ color:$focalColor;}
+
+table ul li
+{
+    list-style-position:inside;
+}
+

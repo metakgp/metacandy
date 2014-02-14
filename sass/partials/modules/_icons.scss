@@ -1,0 +1,135 @@
+/*
+ * Filename: icons.scss
+ * Description: All the font-icons mapped to specific ids, classes.
+ * Author: Inderpreet Singh
+ * License: GPLv3 
+*/
+
+/* Base Classes for icons */
+
+.font-icon{
+  font-family: "untitled-font-2";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.portlet-nav-icon {
+    @extend .font-icon;
+    font-size:$bigText;
+    vertical-align:middle;
+    padding-right:10px;
+    color:$black;
+}
+
+.views-icon{
+    width:80px;
+    @extend .portlet-nav-icon;
+    display:block;
+    color:$shadowGrey;
+    text-shadow:1px 1px rgba(0,0,0,0.1);
+    @include transition-property(color);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in);
+}
+
+.main-nav-item{
+     background:url('../images/icons/main_nav_sprite.png');
+      background-repeat:no-repeat;
+}
+
+
+/* Mapping each link/navigation item etc to a single icon */
+
+
+/* Main navigation */
+
+#n-mainpage-description{
+    @extend .main-nav-item;
+    background-position:center 0px; 
+    @include breakpoint (shahbaaz){background-position:left 0px;}
+     @include breakpoint (ishwerdas){background-position:center 0px;}
+}
+
+#n-recentchanges{
+    @extend .main-nav-item;
+    background-position:center -100px;
+    @include breakpoint(shahbaaz){background-position:left -100px;}
+     @include breakpoint (ishwerdas){background-position:center -100px;}
+}
+
+#n-randompage{
+    @extend .main-nav-item;
+    background-position:center -200px;
+    @include breakpoint (shahbaaz){ background-position:left -200px; }
+     @include breakpoint (ishwerdas){background-position:center -200px;}
+}
+
+/* Tools */
+
+#t-whatlinkshere a:before{ content: 'o'; }
+
+#t-recentchangeslinked a:before{ content: 's'; }
+
+#t-specialpages a:before{ content: 'r'; }
+
+#t-contributions a:before{ content: 'm'; }
+
+#t-print a:before{ content: 'i'; }
+
+#t-log a:before{ content: 'A'; }
+
+#t-blockip a:before { content: 'x'; }
+
+#t-userrights a:before { content: 'y'; }
+
+#t-permalink a:before{ content: 'q'; }
+
+#t-info a:before{ content: 't'; }
+
+#t-upload a:before{ content: 'b'; @include transform(rotate(-90deg)); }
+
+/* Personal Tools */
+
+#pt-userpage a:before{ content:'u';}
+
+#pt-mytalk a:before{content:'a';}
+
+#pt-preferences a:before{ content:'l';}
+
+#pt-watchlist a:before{ content:'j'; }
+
+#pt-mycontris a:before{ content:'m'; }
+
+#pt-logout a:before {content:'n';}
+
+/* Actions */
+
+#ca-nstab-main a:before{ content:'c'; }
+
+#ca-nstab-user a:before{content:'u';}
+
+#ca-talk a:before{ content:'a'; }
+
+#ca-edit a:before{ content:'e'; }
+
+#ca-history a:before{ content:'f'; }
+
+#ca-delete a:before{ content:'g'; }
+    
+#ca-move a:before{ content:'h'; }
+
+#ca-protect a:before{ content:'v'; }
+
+#ca-watch a:before, #ca-unwatch a:before{ content:'B'; }
+
+#ca-nstab-special a:before { content: 'r'; }
+
+#ca-nstab-project a:before{ content: 'y'; }
+
+
+/* page-nav headings */
+
+
+
+
+    

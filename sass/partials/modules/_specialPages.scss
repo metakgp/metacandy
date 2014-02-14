@@ -1,0 +1,49 @@
+/*
+ * Filename: _specialPages.scss
+ * Description: Rules that are specific to special Pages 
+ * Author: Inderpreet Singh
+ * License: GPLv3
+ */
+ 
+/* Search Page */
+
+.mw-search-top-table{
+    width:100%;
+}
+.mw-search-formheader{
+    background:transparent;
+    border:none;
+    font-size:$smallText;
+    a{
+        border-bottom:none;
+        &:hover{ color:$focalColor;}
+    }
+    .search-types ul li, .results-info ul li{ list-style:none; }
+}
+
+.searchresults ul li {list-style:none;}
+
+#searchText{
+    @extend .textInput;
+}
+
+/* Prefrences Page */
+
+#preftoc {
+    margin-bottom:5rem;
+    li {
+        font-size:$smallText;
+        list-style-type:none;
+        float:left;
+        margin-right:5px;
+        margin-bottom:10px;
+       a{ @extend .common-button;
+            padding:10px 10px;
+        }
+    }
+}
+
+#prefcontrol{
+    font-size:$bigText;
+    width:100px;
+}

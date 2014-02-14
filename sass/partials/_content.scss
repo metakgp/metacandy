@@ -1,0 +1,43 @@
+/*
+ *Filename : _content.scss
+ *Purpose  : The wiki content styles 
+ *Author   : Inderpreet Singh
+ *License  : GPLv3
+*/
+
+
+.content-wrapper{
+    max-width:1395px;
+    margin:auto;
+	.column-content{margin:100px auto auto 50px;}
+}
+
+.content{
+    float:left;
+    background-color:$white;
+    width:$textWidth;
+    padding-left:5rem;
+    padding-right:5rem;	
+    border-radius:5px;
+    border: 1px solid $borderGrey;
+    border-top:5px solid $focalColor;
+    box-shadow:2px 2px 3px $shadowGrey;
+}
+
+#mw-content-text{
+	width:$textWidth;
+    margin:auto;
+}
+
+#minutes{
+    font-family:$sansSerif;
+    font-size:$smallText;
+    font-weight:400;
+    text-transform:none;
+    color:$metaText;
+}
+
+#mw-content-text > p:first-child{
+  color:$headingBlack;
+  font-size:$bigText;
+}

@@ -1,0 +1,199 @@
+/*
+ *Filename : _typography.scss
+ *Purpose  : General Typographic styles 
+ *Author   : Inderpreet Singh
+ *License  : GPLv3
+*/
+
+/************************
+TYPOGRAPHIC VARIABLES
+************************/
+
+/*
+ * Typesetting for brlcad skin
+ * Modular scale using golden ratio for 16px@1.1618 and 36px@1.1618
+ * Modular scale generated using modularscale.com
+ */
+
+
+
+/****** Fonts ******/
+
+$serif     : 'Lora',sans-serif;
+$sansSerif : 'Lato',serif;
+
+/****** Scale ******/
+$tera : 5.8rem;             //58.248px
+$giga : 4.2rem;             //41.887px
+$mega : 3.6rem;             //scale origin
+$kilo : 2.6rem;             //25.888px
+$bigText:2.1rem;
+$specialText : 1.8rem;      
+$text: 1.6rem;              // scale origin
+$smallText: 1.4rem;
+$base: $text;
+
+/****** Leading ******/
+$lineHeight:$golden;          //golden leading
+
+/****** Paragraph Sizes ******/
+$textWidth: 75.1rem;     //751.538px
+
+/************************
+TYPOGRAPHIC MIXINS
+************************/
+
+@mixin smallcaps($color, $font-weight) {.
+	font-variant: small-caps;
+	font-weight: $font-weight;
+	text-transform: lowercase;
+	color: $color;
+}
+
+@mixin white-space($wrap-space) {
+	@if $wrap-space == 'pre-wrap' {
+		white-space: #{-moz-}$wrap-space;	// Firefox 1.0-2.0
+		white-space: $wrap-space; 			// current browsers
+	} @else {
+		white-space: $wrap-space;
+	}
+}
+
+
+/**************** 
+FULL PAGE STYLES 
+****************/
+
+html{ font-size:62.5%; }
+
+body{
+    text-rendering:optimizeLegibility;
+	font-size:$text;
+	font-family:$serif;
+	line-height:$lineHeight;
+	color:$textBlack; 
+    @include word-break(break-all);
+    @include hyphens(auto);
+}
+
+/****************
+VERTICAL RHYTHM 
+****************/
+
+h1,h2,h3,h4,h5,h6{
+	color:$headingBlack;
+    font-family:$sansSerif;
+    font-weight:700;
+}
+
+h1{ font-size:$mega; }
+
+h2 { font-size:$kilo; }
+
+h3 { font-size:$bigText; }
+
+h4 { font-size:$specialText; color:$textBlack; }
+
+p,ul,ol,dd,blockquote,h1,h2,h3,h4,h5,h6{
+	padding-bottom:$text;
+}
+
+a{
+	text-decoration:none;
+	color:$black;
+	font-family:$sansSerif;
+}
+
+/****************
+AVOIDING HYPHENATION
+****************/
+
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+	@include hyphens(none);
+}
+
+
+
+abbr {
+	@include smallcaps($textBlack, 700);
+	&:hover {
+		cursor: help;
+	}
+}
+
+small {
+	font-size: $smallText;
+}
+
+pre code {
+	@extend %normal-wrap;
+	@include white-space(pre-wrap);
+}
+
+pre {
+	@include white-space(pre);
+}
+
+code {
+	@include white-space(pre);
+	font-family: monospace;
+}
+
+blockquote {
+	font-size:$specialText;
+    min-height:50px;
+    vertical-align:middle;
+    padding:20px 20px;
+    padding-left:20px;
+    color:$headingBlack;
+    border-left:4px solid $focalColor;
+    &:before, &:after{
+        font-family:$serif;
+        font-size: 7.2rem;
+        color: $focalColor;
+        line-height:0.8;
+    }
+    &:before{
+        margin-left:-$tera;
+        opacity:0.2;
+        content: '“';
+        float:left;
+    }
+}
+
+dt {
+    display: inline;
+    font-style:italic;
+    color:$headingBlack;
+    font-size:specialText;
+    counter-reset: definitions;
+        & + dt {
+            &:before {
+                content: ", ";
+				margin-left: -0.2rem; /* removes extra space between the dt and the comma */
+            }
+        }
+}
+
+dd {
+    display: block;
+    counter-increment: definitions;
+    &:before {
+        content: counter(definitions, upper-roman) ". ";
+    }
+}
+
+.the-text ul li { list-style-type:disc; }
+.the-text ol li { list-style-type:decimal; }

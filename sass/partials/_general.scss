@@ -1,0 +1,81 @@
+
+body{
+	background:url('../images/ticks.png') repeat fixed;
+	@include breakpoint(tyrion){overflow-x:hidden;}
+}
+
+*:focus { outline: 0; }
+
+::selection{
+	background-color: $focalColor;
+	color:$snowWhite;
+}
+
+::-moz-selection{ 
+	background-color: $focalColor;
+	color:$snowWhite;
+}
+
+a{
+	border-bottom:1px dashed $borderGrey;
+	&:hover{border-bottom:1px dashed $focalColor;}
+}
+
+b{
+    font-weight:700;
+}
+
+.first-heading{
+    font-size:$giga;
+    text-transform:capitalize;
+    padding-top:$kilo;
+    padding-bottom:$bigText;
+}
+
+.big-icon{
+    width:48px;
+    height:48px;
+    vertical-align:middle;
+    font-family:$serif, serif;
+}
+
+.common-text-input{
+    border:1px solid $borderGrey;
+    font-family:$serif, serif;
+    line-height:2;
+    padding-left:10px;
+    font-style:italic;
+    background:$snowWhite;
+    border-radius:5px;
+}
+form{
+    span { display:block;}
+}
+
+.common-button{
+    display:inline;
+    width:auto;
+    font-family:$sansSerif,'sans serif';
+    line-height:2;
+    border-radius:5px;
+    font-style:normal;
+    background:$focalColor;
+    color:$white;
+    cursor:pointer;
+      min-width:50px;
+    border:0px;
+    &:hover{
+        background:$textBlack; 
+    } 
+}
+
+
+input, select
+{
+    @extend .common-text-input;
+}
+
+input[type='submit']
+{
+    @extend .common-button;
+}

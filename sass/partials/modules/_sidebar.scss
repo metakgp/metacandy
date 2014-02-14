@@ -1,0 +1,225 @@
+/*
+ * Filename:_sidebar.scss
+ * Description: Contains rules for sidebar portlets
+ * Author: Inderpreet Singh
+ * License: GPL V3
+ */
+
+/* The wrapper for complete */
+#column-one{
+    float:left;
+    margin-left:3%;
+    margin-right:2%;
+    max-width:300px;
+    width:20%;
+    @include breakpoint(ishwerdas){ 
+        display:none;
+    }
+}
+
+/* General portlet styles */
+.portlet{
+    max-width:300px;
+    border-top:3px solid $borderGrey;
+    background:$snowWhite;
+    padding: 10px 10px;
+    margin-bottom:10px;
+    border-radius:5px;
+    box-shadow:2px 2px 3px $shadowGrey;
+    a{
+      font-size:$smallText;
+      color:$textBlack;
+        border-bottom:none;
+    }
+    h3{
+        font-size:$bigText;
+        font-family:$serif, serif;
+        font-weight:400;
+    }
+    &:hover{
+        background:$white;
+        border-top:3px solid $focalColor;
+    }
+    
+}
+
+#column-one .portlet{
+    @include breakpoint(ishwerdas){ 
+        width:50%; 
+        float:left; 
+        margin-left:10px;
+        box-shadow:none;
+    }
+    @include breakpoint(darvesh){
+        display:block;  
+    }
+}
+.pBody ul li a{
+      display:block;
+    &:before{@extend .portlet-nav-icon;}
+    &:hover{color:$focalColor;}
+}
+
+.textInput{
+    @extend .common-text-input;
+    width:100%;
+    display:block;     
+}
+
+/* Main navigation on the top of sidebar */
+#p-navigation{
+    border-top:none;
+    box-shadow:none;
+    height:100px;
+    background:transparent;
+    text-align:center; 
+    h3{display:none;}
+    a {
+        color:$focalColor;
+        text-transform:capitalize;
+    }
+    .pBody ul li{
+        background-repeat:no-repeat;
+        margin-right:1%;
+        width:32%;
+        float:left;
+        @include breakpoint (shahbaaz){
+            display:block;
+            width:100%;
+    }
+        @include breakpoint (ishwerdas){
+            display:none;
+        }
+       
+    }
+     .pBody ul li a{
+        padding-top:50px;
+        background-repeat:no-repeat;
+        display:block;
+        text-align:center;
+        width:100%;
+        height:50px;
+        border-radius:5px;
+        
+        &:hover{
+            background:rgba(255,255,255,0.3);
+            color:adjust-lightness($focalColor,5);
+        }
+        
+        
+        @include breakpoint (shahbaaz){
+            padding-left:50px;
+            padding-top:10px;
+            width:100px;
+            display:block;
+            text-align:left;
+        }
+        
+    }
+      @include breakpoint(shahbaaz){
+            width:100px;
+            height:150px;
+    }
+    @include breakpoint(ishwerdas){
+        display:none;
+    }
+     @include breakpoint (darvesh){
+            display:none !important;
+        }
+}
+
+/* Search Portlet */
+#p-search{
+    background:transparent;
+    box-shadow:none;
+    border:none;
+    h3{display:none;}
+    #searchInput{
+        @extend .textInput;
+    }
+    &:hover{
+        background:rgba(255,255,255,0.5);
+    }
+}
+
+#column-one #p-search{ @include breakpoint(ishwerdas){ display:none; } }
+
+.page-top-bar{
+    display:none;
+    @include breakpoint(ishwerdas){ display:block; }
+}
+/* Views */
+
+.left-control-bar #p-cactions{
+    border-top:none;
+    box-shadow:none;
+    background:none;
+    float:left;
+    max-width:$textWidth;
+    height:auto;
+    h3{display:none;}
+    ul li {
+       // float:left;
+        
+    }
+    ul li a{
+        width:75px;
+        display:block;
+        border-radius:5px;
+        margin-bottom:10px;
+        text-align:center;
+        color:$shadowGrey;
+        font-size:$smallText;
+        &:before{ 
+            @extend .views-icon;
+        }
+        &:hover{
+            background:rgba(255,255,255,0.5);
+            color:$textBlack;
+        }
+    }
+    .nav-quit{display:none;}
+    .selected a{
+        background-color:rgba(255,255,255,0.5); 
+        color:$textBlack;
+        &:before{ color:$textBlack; }
+    }
+}
+
+.left-control-bar #p-cactions:hover ul li a:before{
+    color:$textBlack;
+}
+.left-control-bar #p-cactions:hover ul li a{
+    color:$textBlack;
+}
+
+.left-control-bar{
+    width:100px;
+    height:100%;
+    float:left;
+     @include breakpoint(darvesh){
+       display:none;
+    }
+     @include breakpoint(tyrion){
+        display:none;
+    }
+}
+
+.page-nav, .page-search{
+    font-size:$smallText;
+    color:$text;
+    float:right;
+}
+
+.page-search .searchButton{
+    display:none;
+}
+.page-nav-item { 
+    @extend .portlet-nav-icon;
+    text-align:center;
+    border-bottom:none;
+    font-size:$kilo;
+    &:hover { color:$focalColor; 
+        border-bottom:none;
+    }
+}
