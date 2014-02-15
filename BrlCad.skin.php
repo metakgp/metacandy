@@ -194,6 +194,13 @@ class BrlCadTemplate extends BaseTemplate {
                     <a class="page-nav-item" id="pn-tools" href ="#"> C </a> 
                     
                     <a class="page-nav-item" id="pn-views" href="#"> e </a> 
+                    
+                    <a class="page-nav-item" id="pn-brl-cad" href="http://brlcad.org">
+                         <img src= 
+                              <?php echo $this->getSkin()->getSkinStylePath( 'images/logo_70.png'); ?> 
+                              width="30px" height="30px"
+                            />
+                    </a>
                 </div>
                 
                 <div class ="page-search"> <?php $this->searchbox(); ?> </div>
