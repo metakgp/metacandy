@@ -113,6 +113,8 @@ $navHeight : 50px;
     height:100%;
     overflow:auto;
     background:$focalColor;
+    display:none;
+    @include breakpoint(ishwerdas){ display:block;}
 }
 
 .transparent-portal{
@@ -145,7 +147,7 @@ $navHeight : 50px;
     font-size:$kilo;
     font-variant:small-caps;
     text-transform:lowercase;
-    word-spacing:2px;
+    letter-spacing:3px;
     text-align:center;
 }
 

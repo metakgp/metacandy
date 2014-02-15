@@ -27,9 +27,13 @@ b{
 
 .first-heading{
     font-size:$giga;
-    text-transform:capitalize;
     padding-top:$kilo;
     padding-bottom:$bigText;
+    @include breakpoint(darvesh){display:inline-block;}
+}
+
+.first-heading span:after{
+    content:'.';
 }
 
 .big-icon{

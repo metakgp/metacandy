@@ -144,6 +144,15 @@ pre code {
 
 pre {
 	@include white-space(pre);
+    background:$textBlack;
+    font-family:monospace;
+    color:#f0dfaf;
+    border-radius:10px;
+    border-top:15px solid $shadowGrey;
+    padding:10px 10px;
+    line-height:2;
+    overflow-x:auto;
+    a{ color:#f0dfaf; }
 }
 
 code {

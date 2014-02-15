@@ -146,7 +146,14 @@
 
 .page-top-bar{
     display:none;
+    width:100%;
+    height:50px;
     @include breakpoint(ishwerdas){ display:block; }
+}
+
+#pn-brl-cad{
+    display:none;
+    @include breakpoint(tyrion){ display:inline; }
 }
 /* Views */
 

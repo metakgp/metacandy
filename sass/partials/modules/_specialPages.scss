@@ -29,7 +29,10 @@
 
 /* Prefrences Page */
 
-#preftoc {
+
+
+#preftoc, #filetoc {
+    background:none;
     margin-bottom:5rem;
     li {
         font-size:$smallText;

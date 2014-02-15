@@ -40,10 +40,24 @@
         padding-left:2rem;
         padding-right:2rem;
     }
+    @include breakpoint (tyrion) {
+        margin-left:0px;
+        width:95%;
+    }
 }
 
 #mw-content-text{
     min-height:500px;
+    img {
+        width:100%;
+        height:auto;
+        border:2px solid $borderGrey;
+    }
+}
+
+#toolbar .mw-toolbar-editbutton{
+    width:23px ;
+    height:22px ;
 }
 
 /*Table Of Contents */
@@ -138,6 +152,20 @@
         font-style:italic;
     }
 }
+
+/*#mw-content-text > p:first-child:first-letter{
+    color:$focalColor;
+    font-size:$bigText*2;   
+    height:$bigText*3;
+    width:50px;
+    text-align:center;
+    font-family:$sansSerif;
+    font-weight:300;
+    float:left;
+    line-height:$bigText*3;
+    border:1px solid $focalColor;
+    border-radius:15px;
+}*/
 
 .mw-ui-button:hover{
     color:$textBlack;
