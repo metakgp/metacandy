@@ -85,6 +85,7 @@ h1,h2,h3,h4,h5,h6{
     font-family:$sansSerif;
     font-weight:700;
     line-height:1.1;
+    margin-top:$text*2;
 }
 
 h1{ font-size:$mega; }
@@ -96,13 +97,14 @@ h3 { font-size:$bigText; }
 h4 { font-size:$specialText;}
 
 p,ul,ol,dd,blockquote,h1,h2,h3,h4,h5,h6{
-	padding-bottom:$text;
+	margin-bottom:$text !important;
 }
 
 a{
 	text-decoration:none;
 	color:$black;
 	font-family:$sansSerif;
+    word-spacing:2px;
 }
 
 /****************
