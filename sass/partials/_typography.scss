@@ -80,7 +80,7 @@ body{
 VERTICAL RHYTHM 
 ****************/
 
-h1,h2,h3,h4,h5,h6{
+.the-text h1,.the-text h2,.the-text h3,.the-text h4,.the-text h5,.the-text h6{
 	color:$headingBlack;
     font-family:$sansSerif;
     font-weight:700;
@@ -97,7 +97,7 @@ h3 { font-size:$bigText; }
 h4 { font-size:$specialText;}
 
 p,ul,ol,dd,blockquote,h1,h2,h3,h4,h5,h6{
-	margin-bottom:$text !important;
+	margin-bottom:$text;
 }
 
 a{

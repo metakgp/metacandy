@@ -92,6 +92,19 @@ class BrlCadTemplate extends BaseTemplate {
 		</header>
 </div>
 
+<style>
+    @font-face {
+  font-family: "untitled-font-2";
+  src:url("<?php echo $this->getSkin()->getSkinStylePath('stylesheets/fonts/untitled-font-2.eot');?>");
+  src:url("<?php echo $this->getSkin()->getSkinStylePath('stylesheets/fonts/untitled-font-2.eot?#iefix');?>") format("embedded-opentype"),
+    url("<?php echo $this->getSkin()->getSkinStylePath('stylesheets/fonts/untitled-font-2.ttf');?>") format("truetype"),
+    url("<?php echo $this->getSkin()->getSkinStylePath('stylesheets/fonts/untitled-font-2.svg#untitled-font-2');?>") format("svg"),
+    url("<?php echo $this->getSkin()->getSkinStylePath('stylesheets/fonts/untitled-font-2.woff');?>") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+    
+</style>
 <!-- MOBILE ONLY NAVIGATIONS -->
 <!-- set of full screen mobile navigation panels that appear only on smaller screens -->    
 

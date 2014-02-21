@@ -1,16 +1,3 @@
-
- 
-@font-face {
-  font-family: "untitled-font-2";
-  src:url("http://localhost/mediawiki/mediawiki-1.22.0/skins/brlcad/stylesheets/fonts/untitled-font-2.eot");
-  src:url("http://localhost/mediawiki/mediawiki-1.22.0/skins/brlcad/stylesheets/fonts/untitled-font-2.eot?#iefix") format("embedded-opentype"),
-    url("http://localhost/mediawiki/mediawiki-1.22.0/skins/brlcad/stylesheets/fonts/untitled-font-2.ttf") format("truetype"),
-    url("http://localhost/mediawiki/mediawiki-1.22.0/skins/brlcad/stylesheets/fonts/untitled-font-2.svg#untitled-font-2") format("svg"),
-    url("http://localhost/mediawiki/mediawiki-1.22.0/skins/brlcad/stylesheets/fonts/untitled-font-2.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
- 
 [data-icon]:before {
   font-family: "untitled-font-2" !important;
   content: attr(data-icon);

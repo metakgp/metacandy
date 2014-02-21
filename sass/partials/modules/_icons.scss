@@ -120,6 +120,8 @@
 
 #ca-protect a:before{ content:'v'; }
 
+#ca-unprotect a:before{ content:'v'; }
+
 #ca-watch a:before, #ca-unwatch a:before{ content:'B'; }
 
 #ca-nstab-special a:before { content: 'r'; }

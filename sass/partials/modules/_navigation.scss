@@ -55,9 +55,11 @@ $navHeight : 50px;
 	max-width:1000px;    	
 	margin:auto;
 	@include breakpoint(darvesh) {float:right; width: 80%;}
+    
 }
 
 .navigation{
+    margin-bottom:0px;
 	li{
         line-height:$navHeight;
         font-size:$text;

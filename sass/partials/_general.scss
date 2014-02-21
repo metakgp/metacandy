@@ -27,8 +27,8 @@ b{
 
 .first-heading{
     font-size:$giga;
-    padding-top:$kilo;
-    padding-bottom:$bigText;
+    padding-top:$specialText;
+    padding-bottom:$specialText*2;
     @include breakpoint(darvesh){display:inline-block;}
 }
 
