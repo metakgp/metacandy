@@ -69,7 +69,7 @@ html{ font-size:62.5%; }
 body{
     text-rendering:optimizeLegibility;
 	font-size:$text;
-	font-family:$serif;
+	font-family:$sansSerif;
 	line-height:$lineHeight;
 	color:$textBlack; 
     @include word-break(break-all);

@@ -12,7 +12,6 @@ $navHeight : 50px;
 	min-height:$navHeight;
 	width:100%;
 	position:fixed;
-	top:-200px;
 	z-index:1000;
 	background:$textBlack;
 	@include breakpoint(tyrion) { display:none; }
