@@ -23,15 +23,15 @@
 
 .content{
     float:left;
-    background-color:$white;
+    //background-color:$white;
     max-width:$textWidth;
     width:60%;
     padding-left:5rem;
     padding-right:5rem;	
     border-radius:5px;
-    border: 1px solid $borderGrey;
-    border-top:5px solid $focalColor;
-    box-shadow:2px 2px 3px $shadowGrey;
+    //border: 1px solid $borderGrey;
+    //-top:5px solid $focalColor;
+    //box-shadow:2px 2px 3px $shadowGrey;
     padding-bottom:5rem;
     @include breakpoint(ishwerdas) {width:80%};
     @include breakpoint (darvesh) {
@@ -65,7 +65,7 @@
 
 .toc{
     padding:10px;
-    border-left:5px solid $focalColor;
+    //border-left:5px solid $focalColor;
     width:100%;
     ul li{
         a{ border-bottom:none;}
