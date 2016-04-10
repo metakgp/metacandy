@@ -1,0 +1,1721 @@
+@charset "UTF-8";
+/*
+ *Filename : _base.scss
+ *Purpose  : A base file to contain all imports, custom variables and mixins
+ *Author   : Inderpreet Singh Ishwerdas (http://ishwerdas.com)
+ *License  : GPLv3 License
+*/
+/****************
+COMPASS IMPORTS
+****************/
+/*@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/transition";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import "compass/css3/hyphenation";
+@import "compass/css3/transform-legacy";*/
+/**************************
+EXTERNAL IMPORTS
+
+**************************/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,400italic);
+/****************
+CUSTOM VARIABLES
+****************/
+/****** Colors ******/
+/****** Golden Ratio Variable ******/
+/****************
+CUSTOM MIXINS
+****************/
+/******* Mixin for defining breakpoints in media queries ******/
+/*
+ *Filename : _typography.scss
+ *Purpose  : General Typographic styles 
+ *Author   : Inderpreet Singh
+ *License  : GPLv3
+*/
+/************************
+TYPOGRAPHIC VARIABLES
+************************/
+/*
+ * Typesetting for brlcad skin
+ * Modular scale using golden ratio for 16px@1.1618 and 36px@1.1618
+ * Modular scale generated using modularscale.com
+ */
+/****** Fonts ******/
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+/****** Scale ******/
+/****** Leading ******/
+/****** Paragraph Sizes ******/
+/************************
+TYPOGRAPHIC MIXINS
+************************/
+/**************** 
+FULL PAGE STYLES 
+****************/
+/* line 70, ../sass/partials/_typography.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 72, ../sass/partials/_typography.scss */
+body {
+  text-rendering: optimizeLegibility;
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.618;
+  color: #333;
+  word-break: break-all;
+  word-break: break-word;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/****************
+VERTICAL RHYTHM 
+****************/
+/* line 86, ../sass/partials/_typography.scss */
+.the-text h1, .the-text h2, .the-text h3, .the-text h4, .the-text h5, .the-text h6 {
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 3.2rem;
+}
+
+/* line 94, ../sass/partials/_typography.scss */
+h1 {
+  font-size: 3.6rem;
+}
+
+/* line 96, ../sass/partials/_typography.scss */
+h2 {
+  font-size: 2.6rem;
+}
+
+/* line 98, ../sass/partials/_typography.scss */
+h3 {
+  font-size: 2.1rem;
+}
+
+/* line 100, ../sass/partials/_typography.scss */
+h4 {
+  font-size: 1.8rem;
+}
+
+/* line 102, ../sass/partials/_typography.scss */
+p, ul, ol, dd, blockquote, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.6rem;
+}
+
+/* line 106, ../sass/partials/_typography.scss */
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  word-spacing: 2px;
+}
+
+/****************
+AVOIDING HYPHENATION
+****************/
+/* line 117, ../sass/partials/_typography.scss */
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
+/* line 135, ../sass/partials/_typography.scss */
+abbr {
+  .
+	font-variant: small-caps;
+  font-weight: 700;
+  text-transform: lowercase;
+  color: #333;
+}
+/* line 137, ../sass/partials/_typography.scss */
+abbr:hover {
+  cursor: help;
+}
+
+/* line 142, ../sass/partials/_typography.scss */
+small {
+  font-size: 1.4rem;
+}
+
+/* line 146, ../sass/partials/_typography.scss */
+pre code {
+  /* @extend %normal-wrap;*/
+  white-space: "-moz-pre-wrap";
+  white-space: pre-wrap;
+}
+
+/* line 151, ../sass/partials/_typography.scss */
+pre {
+  white-space: pre;
+  background: #333;
+  font-family: monospace;
+  color: #f0dfaf;
+  border-radius: 10px;
+  border-top: 15px solid #ccc;
+  padding: 10px 10px;
+  line-height: 2;
+  overflow-x: auto;
+}
+/* line 161, ../sass/partials/_typography.scss */
+pre a {
+  color: #f0dfaf;
+}
+
+/* line 164, ../sass/partials/_typography.scss */
+code {
+  white-space: pre;
+  font-family: monospace;
+}
+
+/* line 169, ../sass/partials/_typography.scss */
+blockquote {
+  font-size: 1.8rem;
+  min-height: 50px;
+  vertical-align: middle;
+  padding: 20px 20px;
+  padding-left: 20px;
+  color: #333;
+  border-left: 4px solid #e74c3c;
+}
+/* line 177, ../sass/partials/_typography.scss */
+blockquote:before, blockquote:after {
+  font-family: "Lora", sans-serif;
+  font-size: 7.2rem;
+  color: #e74c3c;
+  line-height: 0.8;
+}
+/* line 183, ../sass/partials/_typography.scss */
+blockquote:before {
+  margin-left: -5.8rem;
+  opacity: 0.2;
+  content: '“';
+  float: left;
+}
+
+/* line 191, ../sass/partials/_typography.scss */
+dt {
+  display: inline;
+  font-style: italic;
+  color: #333;
+  font-size: specialText;
+  counter-reset: definitions;
+}
+/* line 198, ../sass/partials/_typography.scss */
+dt + dt:before {
+  content: ", ";
+  margin-left: -0.2rem;
+  /* removes extra space between the dt and the comma */
+}
+
+/* line 205, ../sass/partials/_typography.scss */
+dd {
+  display: block;
+  counter-increment: definitions;
+}
+/* line 208, ../sass/partials/_typography.scss */
+dd:before {
+  content: counter(definitions,upper-roman) ". ";
+}
+
+/* line 213, ../sass/partials/_typography.scss */
+.the-text ul li {
+  list-style-type: disc;
+}
+
+/* line 214, ../sass/partials/_typography.scss */
+.the-text ol li {
+  list-style-type: decimal;
+}
+
+/*
+ * Filename: icons.scss
+ * Description: All the font-icons mapped to specific ids, classes.
+ * Author: Inderpreet Singh
+ * License: GPLv3 
+*/
+/* Base Classes for icons */
+/* line 10, ../sass/partials/modules/_icons.scss */
+.font-icon, .portlet-nav-icon, .views-icon, .left-control-bar #p-cactions ul li a:before, .transparent-portal a:before, .m-portlet a:before, .mw-editsection a:before, .pBody ul li a:before, .page-nav-item {
+  font-family: "untitled-font-2";
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 16, ../sass/partials/modules/_icons.scss */
+.portlet-nav-icon, .views-icon, .left-control-bar #p-cactions ul li a:before, .transparent-portal a:before, .m-portlet a:before, .mw-editsection a:before, .pBody ul li a:before, .page-nav-item {
+  font-size: 2.1rem;
+  vertical-align: middle;
+  padding-right: 10px;
+  color: #000;
+}
+
+/* line 24, ../sass/partials/modules/_icons.scss */
+.views-icon, .left-control-bar #p-cactions ul li a:before {
+  width: 80px;
+  display: block;
+  color: #ccc;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 35, ../sass/partials/modules/_icons.scss */
+.main-nav-item, #n-mainpage-description, #n-recentchanges, #n-randompage {
+  background: url("../images/icons/main_nav_sprite.png");
+  background-repeat: no-repeat;
+}
+
+/* Mapping each link/navigation item etc to a single icon */
+/* Main navigation */
+/* line 46, ../sass/partials/modules/_icons.scss */
+#n-mainpage-description {
+  background-position: center 0px;
+}
+@media only screen and (max-width: 1330px) {
+  /* line 46, ../sass/partials/modules/_icons.scss */
+  #n-mainpage-description {
+    background-position: left 0px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  /* line 46, ../sass/partials/modules/_icons.scss */
+  #n-mainpage-description {
+    background-position: center 0px;
+  }
+}
+
+/* line 53, ../sass/partials/modules/_icons.scss */
+#n-recentchanges {
+  background-position: center -100px;
+}
+@media only screen and (max-width: 1330px) {
+  /* line 53, ../sass/partials/modules/_icons.scss */
+  #n-recentchanges {
+    background-position: left -100px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  /* line 53, ../sass/partials/modules/_icons.scss */
+  #n-recentchanges {
+    background-position: center -100px;
+  }
+}
+
+/* line 60, ../sass/partials/modules/_icons.scss */
+#n-randompage {
+  background-position: center -200px;
+}
+@media only screen and (max-width: 1330px) {
+  /* line 60, ../sass/partials/modules/_icons.scss */
+  #n-randompage {
+    background-position: left -200px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  /* line 60, ../sass/partials/modules/_icons.scss */
+  #n-randompage {
+    background-position: center -200px;
+  }
+}
+
+/* Tools */
+/* line 69, ../sass/partials/modules/_icons.scss */
+#t-whatlinkshere a:before {
+  content: 'o';
+}
+
+/* line 71, ../sass/partials/modules/_icons.scss */
+#t-recentchangeslinked a:before {
+  content: 's';
+}
+
+/* line 73, ../sass/partials/modules/_icons.scss */
+#t-specialpages a:before {
+  content: 'r';
+}
+
+/* line 75, ../sass/partials/modules/_icons.scss */
+#t-contributions a:before {
+  content: 'm';
+}
+
+/* line 77, ../sass/partials/modules/_icons.scss */
+#t-print a:before {
+  content: 'i';
+}
+
+/* line 79, ../sass/partials/modules/_icons.scss */
+#t-log a:before {
+  content: 'A';
+}
+
+/* line 81, ../sass/partials/modules/_icons.scss */
+#t-blockip a:before {
+  content: 'x';
+}
+
+/* line 83, ../sass/partials/modules/_icons.scss */
+#t-userrights a:before {
+  content: 'y';
+}
+
+/* line 85, ../sass/partials/modules/_icons.scss */
+#t-permalink a:before {
+  content: 'q';
+}
+
+/* line 87, ../sass/partials/modules/_icons.scss */
+#t-info a:before {
+  content: 't';
+}
+
+/* line 89, ../sass/partials/modules/_icons.scss */
+#t-upload a:before {
+  content: 'b';
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+/* Personal Tools */
+/* line 93, ../sass/partials/modules/_icons.scss */
+#pt-userpage a:before {
+  content: 'u';
+}
+
+/* line 95, ../sass/partials/modules/_icons.scss */
+#pt-mytalk a:before {
+  content: 'a';
+}
+
+/* line 97, ../sass/partials/modules/_icons.scss */
+#pt-preferences a:before {
+  content: 'l';
+}
+
+/* line 99, ../sass/partials/modules/_icons.scss */
+#pt-watchlist a:before {
+  content: 'j';
+}
+
+/* line 101, ../sass/partials/modules/_icons.scss */
+#pt-mycontris a:before {
+  content: 'm';
+}
+
+/* line 103, ../sass/partials/modules/_icons.scss */
+#pt-logout a:before {
+  content: 'n';
+}
+
+/* Actions */
+/* line 107, ../sass/partials/modules/_icons.scss */
+#ca-nstab-main a:before {
+  content: 'c';
+}
+
+/* line 109, ../sass/partials/modules/_icons.scss */
+#ca-nstab-user a:before {
+  content: 'u';
+}
+
+/* line 111, ../sass/partials/modules/_icons.scss */
+#ca-talk a:before {
+  content: 'a';
+}
+
+/* line 113, ../sass/partials/modules/_icons.scss */
+#ca-edit a:before {
+  content: 'e';
+}
+
+/* line 115, ../sass/partials/modules/_icons.scss */
+#ca-history a:before {
+  content: 'f';
+}
+
+/* line 117, ../sass/partials/modules/_icons.scss */
+#ca-delete a:before {
+  content: 'g';
+}
+
+/* line 119, ../sass/partials/modules/_icons.scss */
+#ca-move a:before {
+  content: 'h';
+}
+
+/* line 121, ../sass/partials/modules/_icons.scss */
+#ca-protect a:before {
+  content: 'v';
+}
+
+/* line 123, ../sass/partials/modules/_icons.scss */
+#ca-unprotect a:before {
+  content: 'v';
+}
+
+/* line 125, ../sass/partials/modules/_icons.scss */
+#ca-watch a:before, #ca-unwatch a:before {
+  content: 'B';
+}
+
+/* line 127, ../sass/partials/modules/_icons.scss */
+#ca-nstab-special a:before {
+  content: 'r';
+}
+
+/* line 129, ../sass/partials/modules/_icons.scss */
+#ca-nstab-project a:before {
+  content: 'y';
+}
+
+/* page-nav headings */
+/* line 2, ../sass/partials/_general.scss */
+body {
+  background: #fafafa;
+}
+@media only screen and (max-width: 600px) {
+  /* line 2, ../sass/partials/_general.scss */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* line 8, ../sass/partials/_general.scss */
+*:focus {
+  outline: 0;
+}
+
+/* line 10, ../sass/partials/_general.scss */
+::selection {
+  background-color: #e74c3c;
+  color: #fafafa;
+}
+
+/* line 15, ../sass/partials/_general.scss */
+::-moz-selection {
+  background-color: #e74c3c;
+  color: #fafafa;
+}
+
+/* line 20, ../sass/partials/_general.scss */
+a {
+  border-bottom: 1px dashed #ddd;
+}
+/* line 22, ../sass/partials/_general.scss */
+a:hover {
+  border-bottom: 1px dashed #e74c3c;
+}
+
+/* line 25, ../sass/partials/_general.scss */
+b {
+  font-weight: 700;
+}
+
+/* line 29, ../sass/partials/_general.scss */
+.first-heading {
+  font-size: 4.2rem;
+  font-weight: 300;
+  padding-top: 1.8rem;
+  padding-bottom: 3.6rem;
+  text-align: center;
+  color: #e74c3c;
+}
+@media only screen and (max-width: 920px) {
+  /* line 29, ../sass/partials/_general.scss */
+  .first-heading {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+/* line 46, ../sass/partials/_general.scss */
+.big-icon {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  font-family: "Lora", sans-serif, serif;
+}
+
+/* line 53, ../sass/partials/_general.scss */
+.common-text-input, input, select, .textInput, #p-search #searchInput, #searchText {
+  border: 1px solid #ddd;
+  font-family: "Lora", sans-serif, serif;
+  line-height: 2;
+  padding-left: 10px;
+  font-style: italic;
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* line 63, ../sass/partials/_general.scss */
+form span {
+  display: block;
+}
+
+/* line 66, ../sass/partials/_general.scss */
+.common-button, input[type='submit'], #preftoc li a, #filetoc li a {
+  display: inline;
+  width: auto;
+  font-family: "Lato", sans-serif, "sans serif";
+  line-height: 2;
+  border-radius: 5px;
+  font-style: normal;
+  background: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+  min-width: 50px;
+  border: 0px;
+}
+/* line 78, ../sass/partials/_general.scss */
+.common-button:hover, input[type='submit']:hover, #preftoc li a:hover, #filetoc li a:hover {
+  background: #333;
+}
+
+/* line 1, ../sass/partials/_fonts.scss */
+[data-icon]:before {
+  font-family: "untitled-font-2" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 14, ../sass/partials/_fonts.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-2" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 27, ../sass/partials/_fonts.scss */
+.icon-bubble-love-streamline-talk:before {
+  content: "a";
+}
+
+/* line 31, ../sass/partials/_fonts.scss */
+.icon-book-read-streamline:before {
+  content: "b";
+}
+
+/* line 35, ../sass/partials/_fonts.scss */
+.icon-edit-modify-streamline:before {
+  content: "c";
+}
+
+/* line 39, ../sass/partials/_fonts.scss */
+.icon-home-house-streamline:before {
+  content: "d";
+}
+
+/* line 43, ../sass/partials/_fonts.scss */
+.icon-ink-pen-streamline:before {
+  content: "e";
+}
+
+/* line 47, ../sass/partials/_fonts.scss */
+.icon-monocle-mustache-streamline:before {
+  content: "f";
+}
+
+/* line 51, ../sass/partials/_fonts.scss */
+.icon-delete-garbage-streamline:before {
+  content: "g";
+}
+
+/* line 55, ../sass/partials/_fonts.scss */
+.icon-factory-lift-streamline-warehouse:before {
+  content: "h";
+}
+
+/* line 59, ../sass/partials/_fonts.scss */
+.icon-camera-photo-polaroid-streamline:before {
+  content: "i";
+}
+
+/* line 63, ../sass/partials/_fonts.scss */
+.icon-clock-streamline-time:before {
+  content: "j";
+}
+
+/* line 67, ../sass/partials/_fonts.scss */
+.icon-magic-magic-wand-streamline:before {
+  content: "k";
+}
+
+/* line 71, ../sass/partials/_fonts.scss */
+.icon-settings-streamline-1:before {
+  content: "l";
+}
+
+/* line 75, ../sass/partials/_fonts.scss */
+.icon-like-love-streamline:before {
+  content: "m";
+}
+
+/* line 79, ../sass/partials/_fonts.scss */
+.icon-bag-shopping-streamline:before {
+  content: "n";
+}
+
+/* line 83, ../sass/partials/_fonts.scss */
+.icon-handle-streamline-vector:before {
+  content: "o";
+}
+
+/* line 87, ../sass/partials/_fonts.scss */
+.icon-bomb-bug:before {
+  content: "p";
+}
+
+/* line 91, ../sass/partials/_fonts.scss */
+.icon-link-streamline:before {
+  content: "q";
+}
+
+/* line 95, ../sass/partials/_fonts.scss */
+.icon-notebook-streamline:before {
+  content: "r";
+}
+
+/* line 99, ../sass/partials/_fonts.scss */
+.icon-pen-streamline:before {
+  content: "s";
+}
+
+/* line 103, ../sass/partials/_fonts.scss */
+.icon-envellope-mail-streamline:before {
+  content: "t";
+}
+
+/*
+ *FileName: _navigation.scss
+ *Purpose : Styles for the global navigation Shared with website and blog 
+ *Author  : Inderpreet Singh (Ishwerdas.com) (BRLCAD.org)
+ *License : GPLv3
+*/
+/****** The head contains navigation and logo ******/
+/* line 11, ../sass/partials/modules/_navigation.scss */
+.head {
+  min-height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: #333;
+}
+@media only screen and (max-width: 600px) {
+  /* line 11, ../sass/partials/modules/_navigation.scss */
+  .head {
+    display: none;
+  }
+}
+
+/****** The background of logo is a circle generated and animated via CSS ******/
+/* line 26, ../sass/partials/modules/_navigation.scss */
+.id_logo {
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  top: 1px;
+  left: 5px;
+  z-index: 1100;
+  cursor: pointer;
+}
+@media only screen and (max-width: 920px) {
+  /* line 26, ../sass/partials/modules/_navigation.scss */
+  .id_logo {
+    top: 25px;
+    left: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 26, ../sass/partials/modules/_navigation.scss */
+  .id_logo {
+    display: none;
+  }
+}
+
+/* line 38, ../sass/partials/modules/_navigation.scss */
+.circle {
+  width: 50px;
+  height: 50px;
+  border: 1px, solid, #fafafa;
+  border-radius: 50%;
+  background: #ddd;
+  display: inline-block;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 48, ../sass/partials/modules/_navigation.scss */
+.circle:hover {
+  background: white;
+}
+/* line 49, ../sass/partials/modules/_navigation.scss */
+.circle img {
+  margin-top: 5px;
+}
+
+/****** Navigation sits on the right hand side of logo and behaves responsively ******/
+/* line 54, ../sass/partials/modules/_navigation.scss */
+.navbar {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+@media only screen and (max-width: 920px) {
+  /* line 54, ../sass/partials/modules/_navigation.scss */
+  .navbar {
+    float: right;
+    width: 80%;
+  }
+}
+
+/* line 62, ../sass/partials/modules/_navigation.scss */
+.navigation {
+  margin-bottom: 0px;
+}
+/* line 64, ../sass/partials/modules/_navigation.scss */
+.navigation li {
+  line-height: 50px;
+  font-size: 1.6rem;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  list-style-type: none;
+  float: right;
+  width: 16%;
+  /* ishwerdas, darvesh and tyrion are breakpoints for desktop, 
+  tablet and mobile respectively defined in partials/_base.scss */
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+@media only screen and (max-width: 1100px) {
+  /* line 64, ../sass/partials/modules/_navigation.scss */
+  .navigation li {
+    font-size: 1.4rem;
+    width: 136px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  /* line 64, ../sass/partials/modules/_navigation.scss */
+  .navigation li {
+    font-size: 1.4rem;
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 64, ../sass/partials/modules/_navigation.scss */
+  .navigation li {
+    display: none;
+  }
+}
+/* line 80, ../sass/partials/modules/_navigation.scss */
+.navigation li:hover {
+  border-bottom: 2px solid #e74c3c;
+}
+/* line 81, ../sass/partials/modules/_navigation.scss */
+.navigation li:before {
+  content: none;
+}
+/* line 82, ../sass/partials/modules/_navigation.scss */
+.navigation li a {
+  color: #fafafa;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  display: block;
+  border-bottom: none;
+}
+
+/* Tiny nav is the replacement of navigation as a select menu on mobile */
+/* line 96, ../sass/partials/modules/_navigation.scss */
+.tinynav {
+  display: none;
+  width: 100%;
+  height: 50px;
+  font-size: 1.6rem;
+  line-height: 50px;
+  border: none;
+}
+@media only screen and (max-width: 600px) {
+  /* line 96, ../sass/partials/modules/_navigation.scss */
+  .tinynav {
+    display: block;
+  }
+}
+
+/* line 106, ../sass/partials/modules/_navigation.scss */
+.icon {
+  width: 1.6rem;
+}
+
+/* line 108, ../sass/partials/modules/_navigation.scss */
+.hidden {
+  top: -50px;
+}
+
+/* line 110, ../sass/partials/modules/_navigation.scss */
+.mobile-nav {
+  position: fixed;
+  z-index: 2000;
+  top: -2000px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  overflow: auto;
+  background: #e74c3c;
+  display: none;
+}
+@media only screen and (max-width: 1100px) {
+  /* line 110, ../sass/partials/modules/_navigation.scss */
+  .mobile-nav {
+    display: block;
+  }
+}
+
+/* line 123, ../sass/partials/modules/_navigation.scss */
+.transparent-portal, .m-portlet {
+  background: transparent;
+  box-shadow: none;
+  border-top: 0px;
+}
+
+/* line 129, ../sass/partials/modules/_navigation.scss */
+.transparent-portal a, .m-portlet a {
+  width: 95%;
+  line-height: 50px;
+  margin-bottom: 10px;
+  padding-left: 5% !important;
+  color: #fff;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  border-bottom: none;
+  font-size: 1.8rem;
+}
+/* line 140, ../sass/partials/modules/_navigation.scss */
+.transparent-portal a:before, .m-portlet a:before {
+  color: #fff;
+}
+/* line 144, ../sass/partials/modules/_navigation.scss */
+.transparent-portal a:hover, .m-portlet a:hover {
+  background: #c0392b;
+}
+
+/* line 147, ../sass/partials/modules/_navigation.scss */
+.transparent-portal h3, .m-portlet h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.6rem;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/* line 157, ../sass/partials/modules/_navigation.scss */
+.m-nav-container {
+  display: block;
+  width: 80%;
+  background: #e74c3c;
+  border-radius: 5px;
+  margin: auto;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  /* line 157, ../sass/partials/modules/_navigation.scss */
+  .m-nav-container {
+    width: 300px;
+  }
+}
+
+/* line 169, ../sass/partials/modules/_navigation.scss */
+.m-portlet {
+  float: left;
+  width: 40%;
+  min-width: 200px;
+  margin-right: 5%;
+}
+@media only screen and (max-width: 600px) {
+  /* line 169, ../sass/partials/modules/_navigation.scss */
+  .m-portlet {
+    width: 100%;
+  }
+}
+
+/* line 180, ../sass/partials/modules/_navigation.scss */
+#m-p-cactions {
+  clear: both;
+  float: none;
+  width: 300px;
+  margin: auto;
+}
+
+/* line 186, ../sass/partials/modules/_navigation.scss */
+.nav-quit {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+/* line 193, ../sass/partials/modules/_navigation.scss */
+.nav-quit .nav-quit-X {
+  background: #e74c3c;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  float: right;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  line-height: 30px;
+  font-size: 1.6rem;
+}
+
+/*
+ *Filename : _content.scss
+ *Purpose  : The wiki content styles 
+ *Author   : Inderpreet Singh
+ *License  : GPLv3
+*/
+/* line 9, ../sass/partials/modules/_content.scss */
+.content-wrapper {
+  max-width: 1397px;
+  margin: auto;
+}
+/* line 12, ../sass/partials/modules/_content.scss */
+.content-wrapper .column-content {
+  margin: 100px auto auto 125px;
+}
+@media only screen and (max-width: 920px) {
+  /* line 12, ../sass/partials/modules/_content.scss */
+  .content-wrapper .column-content {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 12, ../sass/partials/modules/_content.scss */
+  .content-wrapper .column-content {
+    margin-top: 0px;
+  }
+}
+
+/* line 24, ../sass/partials/modules/_content.scss */
+.content {
+  float: left;
+  max-width: 75.1rem;
+  width: 60%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-radius: 5px;
+  padding-bottom: 5rem;
+}
+@media only screen and (max-width: 1100px) {
+  /* line 24, ../sass/partials/modules/_content.scss */
+  .content {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 920px) {
+  /* line 24, ../sass/partials/modules/_content.scss */
+  .content {
+    margin-left: 2.5%;
+    width: 90%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 24, ../sass/partials/modules/_content.scss */
+  .content {
+    margin-left: 0px;
+    width: 95%;
+  }
+}
+
+/* line 49, ../sass/partials/modules/_content.scss */
+#mw-content-text {
+  min-height: 500px;
+}
+/* line 51, ../sass/partials/modules/_content.scss */
+#mw-content-text img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+}
+
+/* line 58, ../sass/partials/modules/_content.scss */
+#toolbar .mw-toolbar-editbutton {
+  width: 23px;
+  height: 22px;
+}
+
+/*Table Of Contents */
+/* line 64, ../sass/partials/modules/_content.scss */
+.tocnumber {
+  float: right;
+}
+
+/* line 66, ../sass/partials/modules/_content.scss */
+.toc {
+  padding: 10px;
+  width: 100%;
+}
+/* line 70, ../sass/partials/modules/_content.scss */
+.toc ul li {
+  list-style-type: none;
+}
+/* line 71, ../sass/partials/modules/_content.scss */
+.toc ul li a {
+  border-bottom: none;
+}
+
+/* line 77, ../sass/partials/modules/_content.scss */
+.mw-editsection span {
+  display: none;
+}
+/* line 78, ../sass/partials/modules/_content.scss */
+.mw-editsection:hover a:before {
+  color: #000;
+}
+/* line 79, ../sass/partials/modules/_content.scss */
+.mw-editsection a {
+  font-size: 10px;
+  vertical-align: baseline;
+  display: inline-block;
+  border-bottom: none;
+  color: #ccc;
+  font-variant: small-caps;
+}
+/* line 87, ../sass/partials/modules/_content.scss */
+.mw-editsection a:before {
+  vertical-align: baseline;
+  content: 'e';
+  font-variant: normal;
+  color: #ccc;
+}
+
+/* line 98, ../sass/partials/modules/_content.scss */
+#mw-content-text form {
+  margin-bottom: 1.6rem;
+  font-family: "Lato", sans-serif;
+  border-bottom: 1px solid #ddd;
+}
+/* line 101, ../sass/partials/modules/_content.scss */
+#mw-content-text form legend {
+  font-weight: 700;
+  border-bottom: 1px solid #e74c3c;
+  width: 100%;
+}
+/* line 106, ../sass/partials/modules/_content.scss */
+#mw-content-text form input, #mw-content-text form select {
+  vertical-align: middle;
+}
+/* line 109, ../sass/partials/modules/_content.scss */
+#mw-content-text form label {
+  min-width: 100px;
+  display: inline-block;
+  color: #000;
+  vertical-align: middle;
+}
+/* line 115, ../sass/partials/modules/_content.scss */
+#mw-content-text form input[type='submit'] {
+  display: block;
+  float: right;
+}
+/* line 117, ../sass/partials/modules/_content.scss */
+#mw-content-text form fieldset {
+  margin-top: 10px;
+}
+/* line 119, ../sass/partials/modules/_content.scss */
+#mw-content-text form fieldset table {
+  margin-top: 10px;
+}
+
+/* line 123, ../sass/partials/modules/_content.scss */
+.mainLegend {
+  font-size: 2.6rem;
+  border-bottom: 0px !important;
+  background: none;
+  color: #333;
+}
+
+/* line 130, ../sass/partials/modules/_content.scss */
+.mw-label {
+  text-align: left !important;
+  min-width: 100px;
+}
+
+/* line 136, ../sass/partials/modules/_content.scss */
+#minutes {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: none;
+  color: #999;
+}
+
+/* line 144, ../sass/partials/modules/_content.scss */
+#mw-content-text > p:first-child {
+  color: #333;
+  font-size: 2.1rem;
+}
+@media only screen and (max-width: 920px) {
+  /* line 144, ../sass/partials/modules/_content.scss */
+  #mw-content-text > p:first-child {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 144, ../sass/partials/modules/_content.scss */
+  #mw-content-text > p:first-child {
+    font-size: 1.6rem;
+    font-style: italic;
+  }
+}
+
+/*#mw-content-text > p:first-child:first-letter{
+    color:$focalColor;
+    font-size:$bigText*2;   
+    height:$bigText*3;
+    width:50px;
+    text-align:center;
+    font-family:$sansSerif;
+    font-weight:300;
+    float:left;
+    line-height:$bigText*3;
+    border:1px solid $focalColor;
+    border-radius:15px;
+}*/
+/* line 170, ../sass/partials/modules/_content.scss */
+.mw-ui-button:hover {
+  color: #333;
+}
+
+/* line 174, ../sass/partials/modules/_content.scss */
+.mw-search-results li {
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+/* line 178, ../sass/partials/modules/_content.scss */
+.mw-search-results li a {
+  display: block;
+}
+
+/* line 181, ../sass/partials/modules/_content.scss */
+.mw-search-result-heading a {
+  color: #e74c3c;
+}
+
+/* line 183, ../sass/partials/modules/_content.scss */
+table ul li {
+  list-style-position: inside;
+}
+
+/*
+ * Filename:_sidebar.scss
+ * Description: Contains rules for sidebar portlets
+ * Author: Inderpreet Singh
+ * License: GPL V3
+ */
+/* The wrapper for complete */
+/* line 9, ../sass/partials/modules/_sidebar.scss */
+#column-one {
+  float: left;
+  margin-left: 3%;
+  margin-right: 2%;
+  max-width: 300px;
+  width: 20%;
+}
+@media only screen and (max-width: 1100px) {
+  /* line 9, ../sass/partials/modules/_sidebar.scss */
+  #column-one {
+    display: none;
+  }
+}
+
+/* General portlet styles */
+/* line 21, ../sass/partials/modules/_sidebar.scss */
+.portlet {
+  max-width: 300px;
+  background: #fafafa;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+/* line 30, ../sass/partials/modules/_sidebar.scss */
+.portlet a {
+  font-size: 1.4rem;
+  color: #333;
+  border-bottom: none;
+}
+/* line 35, ../sass/partials/modules/_sidebar.scss */
+.portlet h3 {
+  font-size: 2.1rem;
+  font-family: "Lora", sans-serif, serif;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1100px) {
+  /* line 46, ../sass/partials/modules/_sidebar.scss */
+  #column-one .portlet {
+    width: 50%;
+    float: left;
+    margin-left: 10px;
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 920px) {
+  /* line 46, ../sass/partials/modules/_sidebar.scss */
+  #column-one .portlet {
+    display: block;
+  }
+}
+
+/* line 57, ../sass/partials/modules/_sidebar.scss */
+.pBody ul li a {
+  display: block;
+}
+/* line 60, ../sass/partials/modules/_sidebar.scss */
+.pBody ul li a:hover {
+  color: #e74c3c;
+}
+
+/* line 63, ../sass/partials/modules/_sidebar.scss */
+.textInput, #p-search #searchInput, #searchText {
+  width: 100%;
+  display: block;
+}
+
+/* Main navigation on the top of sidebar */
+/* line 70, ../sass/partials/modules/_sidebar.scss */
+#p-navigation {
+  border: none;
+  box-shadow: none;
+  height: 100px;
+  background: transparent;
+  text-align: center;
+}
+/* line 76, ../sass/partials/modules/_sidebar.scss */
+#p-navigation h3 {
+  display: none;
+}
+/* line 77, ../sass/partials/modules/_sidebar.scss */
+#p-navigation a {
+  color: #e74c3c;
+  text-transform: capitalize;
+}
+/* line 81, ../sass/partials/modules/_sidebar.scss */
+#p-navigation .pBody ul li {
+  background-repeat: no-repeat;
+  margin-right: 1%;
+  width: 32%;
+  float: left;
+}
+@media only screen and (max-width: 1330px) {
+  /* line 81, ../sass/partials/modules/_sidebar.scss */
+  #p-navigation .pBody ul li {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  /* line 81, ../sass/partials/modules/_sidebar.scss */
+  #p-navigation .pBody ul li {
+    display: none;
+  }
+}
+/* line 95, ../sass/partials/modules/_sidebar.scss */
+#p-navigation .pBody ul li a {
+  padding-top: 50px;
+  background-repeat: no-repeat;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+/* line 104, ../sass/partials/modules/_sidebar.scss */
+#p-navigation .pBody ul li a:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #ea6153;
+}
+@media only screen and (max-width: 1330px) {
+  /* line 95, ../sass/partials/modules/_sidebar.scss */
+  #p-navigation .pBody ul li a {
+    padding-left: 50px;
+    padding-top: 10px;
+    width: 100px;
+    display: block;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 1330px) {
+  /* line 70, ../sass/partials/modules/_sidebar.scss */
+  #p-navigation {
+    width: 100px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  /* line 70, ../sass/partials/modules/_sidebar.scss */
+  #p-navigation {
+    display: none;
+  }
+}
+@media only screen and (max-width: 920px) {
+  /* line 70, ../sass/partials/modules/_sidebar.scss */
+  #p-navigation {
+    display: none !important;
+  }
+}
+
+/* Search Portlet */
+/* line 132, ../sass/partials/modules/_sidebar.scss */
+#p-search {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+/* line 136, ../sass/partials/modules/_sidebar.scss */
+#p-search h3 {
+  display: none;
+}
+/* line 140, ../sass/partials/modules/_sidebar.scss */
+#p-search:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 1100px) {
+  /* line 145, ../sass/partials/modules/_sidebar.scss */
+  #column-one #p-search {
+    display: none;
+  }
+}
+
+/* line 147, ../sass/partials/modules/_sidebar.scss */
+.page-top-bar {
+  display: none;
+  width: 100%;
+  height: 50px;
+}
+@media only screen and (max-width: 1100px) {
+  /* line 147, ../sass/partials/modules/_sidebar.scss */
+  .page-top-bar {
+    display: block;
+  }
+}
+
+/* line 154, ../sass/partials/modules/_sidebar.scss */
+#pn-brl-cad {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  /* line 154, ../sass/partials/modules/_sidebar.scss */
+  #pn-brl-cad {
+    display: inline;
+  }
+}
+
+/* Views */
+/* line 160, ../sass/partials/modules/_sidebar.scss */
+.left-control-bar #p-cactions {
+  border: none;
+  box-shadow: none;
+  background: none;
+  float: left;
+  max-width: 75.1rem;
+  height: auto;
+}
+/* line 167, ../sass/partials/modules/_sidebar.scss */
+.left-control-bar #p-cactions h3 {
+  display: none;
+}
+/* line 172, ../sass/partials/modules/_sidebar.scss */
+.left-control-bar #p-cactions ul li a {
+  width: 75px;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ccc;
+  font-size: 1.4rem;
+}
+/* line 183, ../sass/partials/modules/_sidebar.scss */
+.left-control-bar #p-cactions ul li a:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+/* line 188, ../sass/partials/modules/_sidebar.scss */
+.left-control-bar #p-cactions .nav-quit {
+  display: none;
+}
+/* line 189, ../sass/partials/modules/_sidebar.scss */
+.left-control-bar #p-cactions .selected a {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+}
+/* line 192, ../sass/partials/modules/_sidebar.scss */
+.left-control-bar #p-cactions .selected a:before {
+  color: #333;
+}
+
+/* line 196, ../sass/partials/modules/_sidebar.scss */
+.left-control-bar #p-cactions:hover ul li a:before {
+  color: #333;
+}
+
+/* line 199, ../sass/partials/modules/_sidebar.scss */
+.left-control-bar #p-cactions:hover ul li a {
+  color: #333;
+}
+
+/* line 203, ../sass/partials/modules/_sidebar.scss */
+.left-control-bar {
+  width: 100px;
+  height: 100%;
+  float: left;
+}
+@media only screen and (max-width: 920px) {
+  /* line 203, ../sass/partials/modules/_sidebar.scss */
+  .left-control-bar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 203, ../sass/partials/modules/_sidebar.scss */
+  .left-control-bar {
+    display: none;
+  }
+}
+
+/* line 215, ../sass/partials/modules/_sidebar.scss */
+.page-nav, .page-search {
+  font-size: 1.4rem;
+  color: 1.6rem;
+  float: right;
+}
+
+/* line 221, ../sass/partials/modules/_sidebar.scss */
+.page-search .searchButton {
+  display: none;
+}
+
+/* line 224, ../sass/partials/modules/_sidebar.scss */
+.page-nav-item {
+  text-align: center;
+  border-bottom: none;
+  font-size: 2.6rem;
+}
+/* line 229, ../sass/partials/modules/_sidebar.scss */
+.page-nav-item:hover {
+  color: #e74c3c;
+  border-bottom: none;
+}
+
+/*
+ * Filename:footer.scss
+ * Author: Inderpreet Singh
+ * License: GPL v3 
+ */
+/* line 7, ../sass/partials/modules/_footer.scss */
+#footer {
+  margin-top: 5rem;
+  background: #333;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: "Lato", sans-serif;
+}
+/* line 13, ../sass/partials/modules/_footer.scss */
+#footer a {
+  color: #fff;
+  border-bottom: 0px;
+}
+
+/* line 23, ../sass/partials/modules/_footer.scss */
+#f-list {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+/*
+ * Filename: _specialPages.scss
+ * Description: Rules that are specific to special Pages 
+ * Author: Inderpreet Singh
+ * License: GPLv3
+ */
+/* Search Page */
+/* line 10, ../sass/partials/modules/_specialPages.scss */
+.mw-search-top-table {
+  width: 100%;
+}
+
+/* line 13, ../sass/partials/modules/_specialPages.scss */
+.mw-search-formheader {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+}
+/* line 17, ../sass/partials/modules/_specialPages.scss */
+.mw-search-formheader a {
+  border-bottom: none;
+}
+/* line 19, ../sass/partials/modules/_specialPages.scss */
+.mw-search-formheader a:hover {
+  color: #e74c3c;
+}
+/* line 21, ../sass/partials/modules/_specialPages.scss */
+.mw-search-formheader .search-types ul li, .mw-search-formheader .results-info ul li {
+  list-style: none;
+}
+
+/* line 24, ../sass/partials/modules/_specialPages.scss */
+.searchresults ul li {
+  list-style: none;
+}
+
+/* Prefrences Page */
+/* line 34, ../sass/partials/modules/_specialPages.scss */
+#preftoc, #filetoc {
+  background: none;
+  margin-bottom: 5rem;
+}
+/* line 37, ../sass/partials/modules/_specialPages.scss */
+#preftoc li, #filetoc li {
+  font-size: 1.4rem;
+  list-style-type: none;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+/* line 43, ../sass/partials/modules/_specialPages.scss */
+#preftoc li a, #filetoc li a {
+  padding: 10px 10px;
+}
+
+/* line 49, ../sass/partials/modules/_specialPages.scss */
+#prefcontrol {
+  font-size: 2.1rem;
+  width: 100px;
+}
+
+/* line 24, ../sass/global.scss */
+body {
+  margin: 0px;
+}
+
+/* line 28, ../sass/global.scss */
+.pBody ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+/* line 34, ../sass/global.scss */
+.content-wrapper {
+  max-width: 100%;
+  margin: 0px;
+}
+
+/* line 40, ../sass/global.scss */
+.content-wrapper #footer #f-poweredbyico {
+  visibility: hidden;
+}
+/* line 43, ../sass/global.scss */
+.content-wrapper #footer ul {
+  list-style-type: none;
+}
+/* line 46, ../sass/global.scss */
+.content-wrapper #footer #f-list {
+  list-style-type: none;
+}
+
+/* line 52, ../sass/global.scss */
+.id_logo {
+  height: 90px;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  left: 30px;
+  z-index: 1300;
+  cursor: pointer;
+}
+/* line 61, ../sass/global.scss */
+.id_logo .circle {
+  width: 90px;
+  height: 90px;
+}
+/* line 65, ../sass/global.scss */
+.id_logo .circle .img {
+  width: 80px !important;
+  height: 80px !important;
+}

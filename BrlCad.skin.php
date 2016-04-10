@@ -56,7 +56,7 @@ class BrlCadTemplate extends BaseTemplate {
         <!-- the circular logo that also works as menu toggle -->
 		<div class="id_logo" id='logo'>
             <span class="circle" href="#"> 
-                <img src= <?php echo $this->getSkin()->getSkinStylePath( 'images/logo_70.png'); ?> width="40px" height="40px"/>
+                <img src= <?php echo $this->getSkin()->getSkinStylePath( 'images/metalogo.png'); ?> width="80px" height="80px"/>
             </span> 
         </div>
         

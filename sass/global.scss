@@ -18,3 +18,58 @@
 @import "partials/modules/footer";
 // Rules that are specific to special pages
 @import "partials/modules/specialPages";
+
+// Custom
+
+body {
+	margin: 0px;
+}
+.pBody {
+		ul {
+	list-style-type: none;
+	padding-left: 0px;
+	}
+}
+
+.content-wrapper {
+	max-width: 100%;
+	margin: 0px;
+}
+.content-wrapper {
+	#footer {
+		#f-poweredbyico {
+			visibility: hidden;
+		}
+		ul {
+			list-style-type: none;
+		}
+		#f-list {
+			list-style-type: none;
+		}
+	}
+}
+
+.id_logo {
+    height: 90px;
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    z-index: 1300;
+    cursor: pointer;
+
+    .circle {
+    width: 90px;
+    height: 90px;
+
+    	.img{
+		width: 80px !important;
+    	height: 80px !important;
+		}
+	}
+
+	
+
+}
+
+

@@ -19,6 +19,9 @@ TYPOGRAPHIC VARIABLES
 
 /****** Fonts ******/
 
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
 $serif     : 'Lora',sans-serif;
 $sansSerif : 'Lato',sans-serif;
 
@@ -52,7 +55,7 @@ TYPOGRAPHIC MIXINS
 
 @mixin white-space($wrap-space) {
 	@if $wrap-space == 'pre-wrap' {
-		white-space: #{-moz-}$wrap-space;	// Firefox 1.0-2.0
+		white-space: "-moz-#{$wrap-space}";	// Firefox 1.0-2.0
 		white-space: $wrap-space; 			// current browsers
 	} @else {
 		white-space: $wrap-space;
@@ -141,7 +144,7 @@ small {
 }
 
 pre code {
-	@extend %normal-wrap;
+    /* @extend %normal-wrap;*/
 	@include white-space(pre-wrap);
 }
 
