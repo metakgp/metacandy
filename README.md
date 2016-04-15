@@ -6,7 +6,7 @@ An eye candy Mediawiki theme for MetaKGP.
 
 ### Installation instructions
 
-Assuming `/var/www/html` to be the root of your MedaiWiki Installation.
+Assuming `/var/www/html` to be the root of your MediaWiki Installation:
 
 ```sh
 cd /var/www/html/skins
