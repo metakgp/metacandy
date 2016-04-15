@@ -1,6 +1,7 @@
 # metacandy
 
-An eye candy Mediawiki theme for MetaKGP. 
+An eye candy Mediawiki theme for MetaKGP. Forked from https://github.com/inderpreetsingh/brl-cad-wiki.
+License: GNU GPL V3
 
 ![Screenshot](http://i.imgur.com/OtU1d4p.png "Screenshot")
 
