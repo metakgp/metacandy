@@ -29,4 +29,5 @@ $wgResourceModules['skins.brlcad'] = array(
 	),
 	'remoteBasePath' => &$GLOBALS['wgStylePath'],
 	'localBasePath' => &$GLOBALS['wgStyleDirectory'],
+	'position'=> 'top',
 );
