@@ -12,6 +12,6 @@ $messages = array();
  * @author Inderpreet Singh
  */
 $messages['en'] = array(
-	'skinname-brlcad' => "BrlCad Skin",
-	'brlcad-desc' => "Custom Mediawiki skin for BRL-CAD's wiki website.",
+	'skinname-metacandy' => "BrlCad Skin",
+	'metacandy-desc' => "Custom Mediawiki skin for BRL-CAD's wiki website.",
 );

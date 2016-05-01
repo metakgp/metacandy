@@ -1,6 +1,6 @@
 /*
 Error: File to import not found or unreadable: compass/reset.
-       Load path: /var/lib/mediawiki/skins/brlcad/sass
+       Load path: /var/lib/mediawiki/skins/metacandy/sass
         on line 12 of sass/partials/_base.scss
         from line 3 of sass/global.scss
 
@@ -75,4 +75,4 @@ sass/global.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass/reset.\A        Load path: /var/lib/mediawiki/skins/brlcad/sass\A         on line 12 of sass/partials/_base.scss\A         from line 3 of sass/global.scss\A \A 7: @import \"partials/modules/icons\";\A 8: @import \"partials/general\";\A 9: // Icon fonts\A 10: @import \"partials/fonts\";\A 11: // Navigation includes rules for main navigation\A 12: @import \"partials/modules/navigation\";\A 13: // Rules for the user entered wiki content \A 14: @import \"partials/modules/content\";\A 15: // Rules for the sidebar portlets \A 16: @import \"partials/modules/sidebar\";\A 17: // Rules for the footer"; }
+  content: "Error: File to import not found or unreadable: compass/reset.\A        Load path: /var/lib/mediawiki/skins/metacandy/sass\A         on line 12 of sass/partials/_base.scss\A         from line 3 of sass/global.scss\A \A 7: @import \"partials/modules/icons\";\A 8: @import \"partials/general\";\A 9: // Icon fonts\A 10: @import \"partials/fonts\";\A 11: // Navigation includes rules for main navigation\A 12: @import \"partials/modules/navigation\";\A 13: // Rules for the user entered wiki content \A 14: @import \"partials/modules/content\";\A 15: // Rules for the sidebar portlets \A 16: @import \"partials/modules/sidebar\";\A 17: // Rules for the footer"; }

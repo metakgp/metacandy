@@ -12,8 +12,8 @@ Assuming `/var/www/html` to be the root of your MediaWiki Installation:
 ```sh
 cd /var/www/html/skins
 git clone https://github.com/metakgp/metacandy/
-mv metacandy brlcad
+mv metacandy metacandy
 cd /var/www/html
-echo "$wgDefaultSkin = 'brlcad';" >> LocalSettings.php
-echo 'require_once "$IP/skins/brlcad/brlcad.php";' >> LocalSettings.php
+echo "$wgDefaultSkin = 'metacandy';" >> LocalSettings.php
+echo 'require_once "$IP/skins/metacandy/metacandy.php";' >> LocalSettings.php
 ```

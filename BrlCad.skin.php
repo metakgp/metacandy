@@ -13,7 +13,7 @@
  */
 
 class SkinBrlCad extends SkinTemplate {
-	var $skinname = 'brlcad', $stylename = 'brlcad',
+	var $skinname = 'metacandy', $stylename = 'metacandy',
 		$template = 'BrlCadTemplate', $useHeadElement = true;	
 	/**
 	 * @param $out OutputPage object
@@ -21,7 +21,7 @@ class SkinBrlCad extends SkinTemplate {
 
 	function setupSkinUserCss( OutputPage $out ){
 		parent::setupSkinUserCss( $out );
-		$out->addModuleStyles( "skins.brlcad" );
+		$out->addModuleStyles( "skins.metacandy" );
 	}
 }
 
@@ -51,7 +51,7 @@ class BrlCadTemplate extends BaseTemplate {
 <!-- MARK UP STARTS FROM HERE -->
 
 <!-- BRL-CAD main website navigation -->
-<div class="brlcad-site-nav">
+<div class="metacandy-site-nav">
 <div class="container">
         <!-- the circular logo that also works as menu toggle -->
 		<div class="id_logo" id='logo'>
@@ -208,7 +208,7 @@ class BrlCadTemplate extends BaseTemplate {
                     
                     <a class="page-nav-item" id="pn-views" href="#"> e </a> 
                     
-                    <a class="page-nav-item" id="pn-brl-cad" href="http://brlcad.org">
+                    <a class="page-nav-item" id="pn-brl-cad" href="http://metacandy.org">
                          <img src= 
                               <?php echo $this->getSkin()->getSkinStylePath( 'images/logo_70.png'); ?> 
                               width="30px" height="30px"
